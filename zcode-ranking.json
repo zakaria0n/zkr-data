@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "updated": "2026-08-15",
   "fallback_chain": {
     "code": [
@@ -21,9 +21,9 @@
       "hy3-free"
     ],
     "all": [
+      "hy3-free",
       "nemotron-3-ultra-free",
       "mimo-v2.5-free",
-      "hy3-free",
       "laguna-s-2.1-free"
     ]
   }
