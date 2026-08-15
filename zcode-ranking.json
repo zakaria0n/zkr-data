@@ -1,29 +1,29 @@
 {
-  "version": 3,
-  "updated": "2026-08-15",
+  "version": 4,
+  "updated": "2026-08-11",
   "fallback_chain": {
     "code": [
-      "laguna-s-2.1-free",
+      "deepseek-v4-flash-free",
+      "north-mini-code-free",
       "nemotron-3-ultra-free",
-      "hy3-free",
-      "mimo-v2.5-free"
+      "laguna-s-2.1-free"
     ],
     "think": [
       "nemotron-3-ultra-free",
-      "hy3-free",
-      "mimo-v2.5-free",
+      "deepseek-v4-flash-free",
+      "longcat-2.0-free",
       "laguna-s-2.1-free"
     ],
     "fast": [
-      "nemotron-3.5-lightning-free",
-      "nemotron-3-ultra-free",
-      "mimo-v2.5-free",
-      "hy3-free"
+      "ling-3.0-tiny-free",
+      "north-mini-code-free",
+      "ling-3.0-flash-free",
+      "deepseek-v4-flash-free"
     ],
     "all": [
-      "hy3-free",
+      "deepseek-v4-flash-free",
       "nemotron-3-ultra-free",
-      "mimo-v2.5-free",
+      "north-mini-code-free",
       "laguna-s-2.1-free"
     ]
   }
