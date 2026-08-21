@@ -3,6 +3,8 @@
 ## 1.3.0
 - Fix corrupted UTF-8 text across 374 source files (restored em dashes, box-drawing characters, CJK text, prompts and comments)
 - Release notes are now served from the zkr-data repository
+- ZKR identity: the agent now presents itself as ZKR powered by Z Code models in all conversations
+- Commit and PR attribution now shows Z Code model names instead of internal model IDs
 
 ## 1.2.8
 - Slugify the x-opencode-project header for Zen
