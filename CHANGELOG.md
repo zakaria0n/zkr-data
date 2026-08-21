@@ -5,6 +5,9 @@
 - Release notes are now served from the zkr-data repository
 - ZKR identity: the agent now presents itself as ZKR powered by Z Code models in all conversations
 - Commit and PR attribution now shows Z Code model names instead of internal model IDs
+- /goal autonomy: transient API errors (rate limits, capacity, timeouts) no longer kill the goal — the loop backs off and continues; only repeated failures (5+) or terminal errors (auth/billing) stop it
+- /goal autonomy: internal tool aborts no longer stop the loop — only explicit user takeover (Esc, interrupt) pauses auto-continuation
+- /goal: stronger per-turn work expectations so the agent keeps chaining tool calls instead of stopping after one or two steps
 
 ## 1.2.8
 - Slugify the x-opencode-project header for Zen
