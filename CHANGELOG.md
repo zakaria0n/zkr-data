@@ -1,5 +1,9 @@
 # ZKR Changelog
 
+## 1.3.1
+- Product URL is now https://zkrweb.vercel.app/
+- Fresh installs no longer require a Claude/Anthropic account — Z Code via Zen works with no account (Anthropic OAuth disabled by default, kept behind `ZKR_ENABLE_ANTHROPIC_AUTH=1` for future ZKR account system)
+
 ## 1.3.0
 - Fix corrupted UTF-8 text across 374 source files (restored em dashes, box-drawing characters, CJK text, prompts and comments)
 - Release notes are now served from the zkr-data repository
