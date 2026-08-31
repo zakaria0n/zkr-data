@@ -3,6 +3,8 @@
 ## 1.3.1
 - Product URL is now https://zkrweb.vercel.app/
 - Fresh installs no longer require a Claude/Anthropic account — Z Code via Zen works with no account (Anthropic OAuth disabled by default, kept behind `ZKR_ENABLE_ANTHROPIC_AUTH=1` for future ZKR account system)
+- Improved onboarding: new welcome intro (no account required), theme → security → terminal flow with no provider leak
+- Terminal welcome animation replaced — ZKR Code ASCII with tagline `powered by Z Code • zkrweb.vercel.app` and new app icon
 
 ## 1.3.0
 - Fix corrupted UTF-8 text across 374 source files (restored em dashes, box-drawing characters, CJK text, prompts and comments)
