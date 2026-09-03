@@ -2,19 +2,19 @@
 
 ## 1.3.1
 - Product URL is now https://zkrweb.vercel.app/
-- Fresh installs no longer require an account â€” works with no account (OAuth disabled by default for future account system)
-- Improved onboarding: new welcome intro (no account required), theme â†’ security â†’ terminal flow with no provider leak
-- Terminal welcome animation replaced â€” ZKR Code ASCII with tagline `powered by Z Code â€¢ zkrweb.vercel.app` and new app icon
-- Fix per-model context windows for Z Code â€” auto-compact now respects 1M vs 256K/200K from `zcode-ranking.json` (no more premature compact at 265K for 1M models)
-- `zkr update` now uses https://zkrweb.vercel.app (no GitHub token required) â€” version check and binary download via Vercel proxy (server holds `GITHUB_TOKEN`)
+- Fresh installs no longer require an account — works with no account (OAuth disabled by default for future account system)
+- Improved onboarding: new welcome intro (no account required), theme → security → terminal flow with no provider leak
+- Terminal welcome animation replaced — ZKR Code ASCII with tagline `powered by Z Code • zkrweb.vercel.app` and new app icon
+- Fix per-model context windows for Z Code — auto-compact now respects 1M vs 256K/200K from `zcode-ranking.json` (no more premature compact at 265K for 1M models)
+- `zkr update` now uses https://zkrweb.vercel.app (no GitHub token required) — version check and binary download via Vercel proxy (server holds `GITHUB_TOKEN`)
 
 ## 1.3.0
 - Fix corrupted UTF-8 text across 374 source files (restored em dashes, box-drawing characters, CJK text, prompts and comments)
 - Release notes are now served from the zkr-data repository
 - ZKR identity: the agent now presents itself as ZKR powered by Z Code models in all conversations
 - Commit and PR attribution now shows Z Code model names instead of internal model IDs
-- /goal autonomy: transient API errors (rate limits, capacity, timeouts) no longer kill the goal â€” the loop backs off and continues; only repeated failures (5+) or terminal errors (auth/billing) stop it
-- /goal autonomy: internal tool aborts no longer stop the loop â€” only explicit user takeover (Esc, interrupt) pauses auto-continuation
+- /goal autonomy: transient API errors (rate limits, capacity, timeouts) no longer kill the goal — the loop backs off and continues; only repeated failures (5+) or terminal errors (auth/billing) stop it
+- /goal autonomy: internal tool aborts no longer stop the loop — only explicit user takeover (Esc, interrupt) pauses auto-continuation
 - /goal: stronger per-turn work expectations so the agent keeps chaining tool calls instead of stopping after one or two steps
 
 ## 1.2.8
