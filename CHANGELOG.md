@@ -5,6 +5,7 @@
 - Fresh installs no longer require a Claude/Anthropic account — Z Code via Zen works with no account (Anthropic OAuth disabled by default, kept behind `ZKR_ENABLE_ANTHROPIC_AUTH=1` for future ZKR account system)
 - Improved onboarding: new welcome intro (no account required), theme → security → terminal flow with no provider leak
 - Terminal welcome animation replaced — ZKR Code ASCII with tagline `powered by Z Code • zkrweb.vercel.app` and new app icon
+- Fix per-model context windows for Z Code — auto-compact now respects 1M vs 256K/200K from `zcode-ranking.json` (no more premature compact at 265K for 1M models)
 
 ## 1.3.0
 - Fix corrupted UTF-8 text across 374 source files (restored em dashes, box-drawing characters, CJK text, prompts and comments)
