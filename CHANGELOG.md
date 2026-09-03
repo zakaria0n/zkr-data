@@ -1,5 +1,8 @@
 # ZKR Changelog
 
+## 1.3.2
+- `zkr update` now uses https://zkrweb.vercel.app (no GitHub token required) — version check and binary download via Vercel proxy (server holds `GITHUB_TOKEN`)
+
 ## 1.3.1
 - Product URL is now https://zkrweb.vercel.app/
 - Fresh installs no longer require a Claude/Anthropic account — Z Code via Zen works with no account (Anthropic OAuth disabled by default, kept behind `ZKR_ENABLE_ANTHROPIC_AUTH=1` for future ZKR account system)
